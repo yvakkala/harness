@@ -1,0 +1,4 @@
+interface:
+  display_name: "Logging and Observability"
+  short_description: "Add production logging and operational telemetry."
+  default_prompt: "Use $logging-observability to implement logging and telemetry for this service."

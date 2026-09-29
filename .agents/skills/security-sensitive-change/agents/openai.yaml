@@ -1,0 +1,4 @@
+interface:
+  display_name: "Security-Sensitive Change"
+  short_description: "Handle code changes with material security boundaries."
+  default_prompt: "Use $security-sensitive-change to implement this security-sensitive change."

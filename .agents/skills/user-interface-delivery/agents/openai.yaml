@@ -1,0 +1,4 @@
+interface:
+  display_name: "User Interface Delivery"
+  short_description: "Build task-efficient and accessible interfaces."
+  default_prompt: "Use $user-interface-delivery to implement this user-facing workflow."

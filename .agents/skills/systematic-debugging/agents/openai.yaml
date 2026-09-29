@@ -1,0 +1,4 @@
+interface:
+  display_name: "Systematic Debugging"
+  short_description: "Diagnose defects from evidence before changing code."
+  default_prompt: "Use $systematic-debugging to diagnose and fix this failure."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Contract"
+  short_description: "Design or change stable integration contracts."
+  default_prompt: "Use $api-contract to implement this API or integration contract change."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bootstrap Durable Project"
+  short_description: "Create a requirements-driven durable project baseline."
+  default_prompt: "Use $bootstrap-durable-project to establish the durable baseline for this new project."

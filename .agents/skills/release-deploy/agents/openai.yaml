@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release and Deploy"
+  short_description: "Prepare and execute safe releases and deployments."
+  default_prompt: "Use $release-deploy to release and deploy this change."

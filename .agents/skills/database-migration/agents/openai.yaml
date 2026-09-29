@@ -1,0 +1,4 @@
+interface:
+  display_name: "Database Migration"
+  short_description: "Safely change schemas and stored data."
+  default_prompt: "Use $database-migration to plan and implement this database change."
