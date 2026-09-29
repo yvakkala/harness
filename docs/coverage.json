@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "requirement_groups": {
+    "SCP": {
+      "mechanisms": ["AGENTS.md", "templates/project/AGENTS.md", "bootstrap-durable-project"],
+      "note": "Global scope and project-profile selection stay in the compact core and project facts."
+    },
+    "AUT": {
+      "mechanisms": ["AGENTS.md", "evals/cases.json", "evals/routing.json"],
+      "note": "Clarification, approval, autonomy, escalation, progress, and delegation are always-active behavior."
+    },
+    "REQ": {
+      "mechanisms": ["AGENTS.md", "templates/project/AGENTS.md", "evals/cases.json"],
+      "note": "The core handles ambiguity and acceptance; project instructions hold durable local facts."
+    },
+    "ARC": {
+      "mechanisms": ["AGENTS.md", "bootstrap-durable-project"],
+      "note": "Architecture defaults apply in the core, with new-project detail loaded conditionally."
+    },
+    "CODE": {
+      "mechanisms": ["AGENTS.md", "bootstrap-durable-project"],
+      "note": "Code-quality boundaries are always active without a generic style skill."
+    },
+    "TEST": {
+      "mechanisms": ["AGENTS.md", "bootstrap-durable-project", "database-migration"],
+      "note": "TDD and evidence rules are universal; specialized test isolation stays conditional."
+    },
+    "GIT": {
+      "mechanisms": ["AGENTS.md", "evals/cases.json"],
+      "note": "Git is a completion boundary and is evaluated as core behavior."
+    },
+    "CICD": {
+      "mechanisms": ["ci-pipeline", "release-deploy", "bootstrap-durable-project"],
+      "note": "Pipeline construction and release execution use separate narrow skills."
+    },
+    "SEC": {
+      "mechanisms": ["AGENTS.md", "security-sensitive-change", "ci-pipeline", "infrastructure-change"],
+      "note": "Universal secret and data boundaries remain active; high-risk work loads detailed skills."
+    },
+    "PERF": {
+      "mechanisms": ["AGENTS.md", "templates/project/AGENTS.md"],
+      "note": "Performance is relevance-driven. Add a dedicated skill only after a demonstrated recurring failure."
+    },
+    "DATA": {
+      "mechanisms": ["database-migration", "bootstrap-durable-project", "security-sensitive-change"],
+      "note": "Schema, integrity, lifecycle, and sensitive-data concerns are divided by task boundary."
+    },
+    "REL": {
+      "mechanisms": ["bootstrap-durable-project", "release-deploy", "infrastructure-change", "logging-observability"],
+      "note": "Reliability is designed at project setup and exercised during infrastructure and release work."
+    },
+    "OBS": {
+      "mechanisms": ["logging-observability"],
+      "note": "The observability skill carries the approved detailed defaults and verification."
+    },
+    "UX": {
+      "mechanisms": ["user-interface-delivery", "templates/project/AGENTS.md"],
+      "note": "Task efficiency and accessibility load for interactive products; project facts define platforms."
+    },
+    "DOC": {
+      "mechanisms": ["AGENTS.md", "bootstrap-durable-project", "templates/project/AGENTS.md"],
+      "note": "The core requires maintained knowledge while templates keep local instructions concise."
+    },
+    "DONE": {
+      "mechanisms": ["AGENTS.md", "evals/cases.json", "scripts/doctor.py"],
+      "note": "Completion evidence is core behavior and installed state is independently diagnosable."
+    },
+    "FRAME": {
+      "mechanisms": ["AGENTS.md", "VERSION", "CHANGELOG.md", "evals", "skills.lock.json"],
+      "note": "Versioning, evaluations, provenance, and anti-bloat rules govern framework evolution."
+    }
+  }
+}

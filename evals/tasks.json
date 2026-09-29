@@ -1,0 +1,34 @@
+[
+  {
+    "id": "precise-logging-retention",
+    "fixture": "logging-retention",
+    "prompt": "Update production log retention to exactly 30 days. Preserve every other setting. This is a precise requested change, so implement it directly without presenting a plan. Do not commit or push because this is an isolated evaluation workspace.",
+    "allowed_changes": ["logging.json"],
+    "checks": [
+      {
+        "type": "json_value",
+        "path": "logging.json",
+        "pointer": ["production", "retention_days"],
+        "equals": 30
+      },
+      {
+        "type": "json_value",
+        "path": "logging.json",
+        "pointer": ["production", "max_file_size_mib"],
+        "equals": 100
+      },
+      {
+        "type": "json_value",
+        "path": "logging.json",
+        "pointer": ["production", "rotate_after_hours"],
+        "equals": 24
+      },
+      {
+        "type": "json_value",
+        "path": "logging.json",
+        "pointer": ["production", "compress_rotated_files"],
+        "equals": true
+      }
+    ]
+  }
+]

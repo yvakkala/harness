@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["action", "skills", "reason"],
+  "properties": {
+    "action": {
+      "type": "string",
+      "enum": ["ask", "plan", "implement", "stop", "report"]
+    },
+    "skills": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "reason": {"type": "string"}
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "skills": {
+    "api-contract": {
+      "files": {
+        "SKILL.md": "686d0a7e154556fbd009090b5216499afb608da4588acf91a012d3d230055146",
+        "agents/openai.yaml": "0d44a111cbbc5655533f235fe64b8e82079b11c89dc5b18c03866cc32151e9f1",
+        "references/contract-review.md": "8f93015d80b84e49f4d4681c153f8558a90a90f259b264316c355d0220e49e14"
+      },
+      "license": "unlicensed",
+      "revision": null,
+      "source": "local"
+    },
+    "bootstrap-durable-project": {
+      "files": {
+        "SKILL.md": "5f30b4d415a0ed7e138e11d329d71f3fd0c0589d5131fdeb3f9b3ace5b7891cb",
+        "agents/openai.yaml": "5655376bb15cbcb63051de6c19af306af1085522b8d9189bf05376491cacad00",
+        "references/durable-baseline.md": "1c3f84188ac874218e46c37f2b7dd97e0ac001b1bab9cf2abaf9e5eb3d2043ae"
+      },
+      "license": "unlicensed",
+      "revision": null,
+      "source": "local"
+    },
+    "ci-pipeline": {
+      "files": {
+        "SKILL.md": "526fb653c9e028b4378f17cbed5d45c41bea77638fdd9ca1db6b2b59ab6039be",
+        "agents/openai.yaml": "be52b34f975b3106cd0d212ef0d4dc1844e258fc3f381040c297a5175a9b33d1",
+        "references/review.md": "fe53e23f70c028303e56db69568bdc79db212463ea456322284b8525fe5c727b"
+      },
+      "license": "unlicensed",
+      "revision": null,
+      "source": "local"
+    },
+    "database-migration": {
+      "files": {
+        "SKILL.md": "a2139fae8a50e75024c51bd9fc5a725a9c783c0c3798ff5953bed1472eed0e20",
+        "agents/openai.yaml": "77a46c73e50d92efef7372694d6cd64ff8ecece33cd2d055a17c37e2684ae700",
+        "references/migration-safety.md": "470434532ffd2e426add7fd1401c38a89e52e574dcb8b1c9e3af4dbfa13bbbd8"
+      },
+      "license": "unlicensed",
+      "revision": null,
+      "source": "local"
+    },
+    "infrastructure-change": {
+      "files": {
+        "SKILL.md": "d7859dd8c1092b6840fc6678645b8764de159b7ad58266acc11777eabeaf60af",
+        "agents/openai.yaml": "ec5fb6b76b675a410fe3836590c9825064ea50742f485864a7b61a1f51a1b9e3",
+        "references/review.md": "63fa9e80a70c82062ddd775221d4158b527492f8e49be661e8a105b96dbab34e"
+      },
+      "license": "unlicensed",
+      "revision": null,
+      "source": "local"
+    },
+    "logging-observability": {
+      "files": {
+        "SKILL.md": "9545293c2e27d438005a87447f3997bf35a2a2717db88bb3ae89b85fcad3f4e5",
+        "agents/openai.yaml": "d2128197a2c5f5597c85164bd2118276f198718660dd8340fac754df14e4688b",
+        "references/defaults.md": "ae635d41aa1d52f93e8906ec45f1f7df4822a3ed4d09751b9b2c4fa163695544"
+      },
+      "license": "unlicensed",
+      "revision": null,
+      "source": "local"
+    },
+    "release-deploy": {
+      "files": {
+        "SKILL.md": "c031efab8a1eec98db7cdbd76780e877334af925031fb356786b9f52a55f901b",
+        "agents/openai.yaml": "d1caf493b1105cfb741331f39550d573cc042a3a66e311d31564e0390567a09e",
+        "references/gates.md": "834a5e75ff07f8b4e048eedc84de4fe27454509aedd7a0b677f544af2bf7e84e"
+      },
+      "license": "unlicensed",
+      "revision": null,
+      "source": "local"
+    },
+    "security-sensitive-change": {
+      "files": {
+        "SKILL.md": "42e320acd889ddeddc7cde0b9dfe43adce0bd713eb51d7347ac3e6742bb8f987",
+        "agents/openai.yaml": "7435062d20949f447a6d14d15aca0e3d80db846434a8c3ce1e59a2cfaa30eb5c",
+        "references/review.md": "124463de6004008755df64fc329c03864f62ec8b803fe461eeb83e4777a08f6c"
+      },
+      "license": "unlicensed",
+      "revision": null,
+      "source": "local"
+    },
+    "systematic-debugging": {
+      "files": {
+        "LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "SKILL.md": "2ded89d715f5030c90b0df8675ba861e1f88f95caad230d69096b24b16dbca7f",
+        "agents/openai.yaml": "32848cff09abe409e95f1600bfe64113d042baa1af16c3893b7c0d476a524be3",
+        "references/provenance.md": "d7f68e4f6612f05ed9df637f7b2ec4f655737dfa68b1c3c8407f754c80202309"
+      },
+      "license": "MIT; see LICENSE.txt",
+      "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "source": "https://github.com/obra/superpowers"
+    },
+    "user-interface-delivery": {
+      "files": {
+        "SKILL.md": "c72dcaa4902387890c4d909a2186c82d0c2479c6491e6679873ba26161f964b4",
+        "agents/openai.yaml": "1e91e031e1849f9afb1a61ebc290bcaaf19b73c06c7aced7e809a2da34a70e2c",
+        "references/interaction.md": "6370e18c05a08e3aa11bd29da9d452f11b49213a7373fb30179747ac2c05a477"
+      },
+      "license": "unlicensed",
+      "revision": null,
+      "source": "local"
+    }
+  }
+}
