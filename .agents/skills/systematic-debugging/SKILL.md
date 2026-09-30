@@ -1,6 +1,7 @@
 ---
 name: systematic-debugging
 description: Diagnose a reproducible bug, failing test, build failure, integration failure, performance regression, or unexpected technical behavior when the cause is not already established. Use evidence before proposing a fix.
+license: MIT; see LICENSE.txt
 ---
 
 # Systematic Debugging

@@ -1,0 +1,4 @@
+interface:
+  display_name: "CI Pipeline"
+  short_description: "Build secure and reproducible CI workflows"
+  default_prompt: "Use $ci-pipeline to design and verify this CI workflow change."

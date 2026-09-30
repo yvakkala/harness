@@ -1,0 +1,8 @@
+{
+  "production": {
+    "retention_days": 90,
+    "max_file_size_mib": 100,
+    "rotate_after_hours": 24,
+    "compress_rotated_files": true
+  }
+}

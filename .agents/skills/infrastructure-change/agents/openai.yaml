@@ -1,0 +1,4 @@
+interface:
+  display_name: "Infrastructure Change"
+  short_description: "Change infrastructure with safe rollout and recovery"
+  default_prompt: "Use $infrastructure-change to plan and verify this infrastructure change safely."

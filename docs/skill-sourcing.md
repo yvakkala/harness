@@ -43,6 +43,8 @@ The following skills encode personal requirements or bridge a demonstrated gap:
 - `user-interface-delivery`
 - `release-deploy`
 - `systematic-debugging` (adapted from Superpowers)
+- `infrastructure-change`
+- `ci-pipeline`
 
 ## Admission checklist
 

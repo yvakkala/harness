@@ -1,0 +1,282 @@
+[
+  {
+    "id": "bootstrap-explicit",
+    "prompt": "Use the bootstrap-durable-project skill to create a maintained API service from this empty repository.",
+    "expected_action": "plan",
+    "expected_skills": ["bootstrap-durable-project"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "bootstrap-implicit",
+    "prompt": "Turn this throwaway prototype into a production-maintained internal service with tests, CI, documentation, and deployment readiness.",
+    "expected_action": "plan",
+    "expected_skills": ["bootstrap-durable-project"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "bootstrap-adjacent-negative",
+    "prompt": "Fix the typo in the README of this established project.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["bootstrap-durable-project"]
+  },
+  {
+    "id": "bootstrap-quick-negative",
+    "prompt": "mode: quick. Make a one-file script that prints the first ten CSV rows.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["bootstrap-durable-project"]
+  },
+  {
+    "id": "logging-explicit",
+    "prompt": "Use logging-observability to add production file logging to this worker.",
+    "expected_action": "plan",
+    "expected_skills": ["logging-observability"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "logging-implicit",
+    "prompt": "Add structured production logs, rotation, retention, redaction, metrics, and alerts to this API.",
+    "expected_action": "plan",
+    "expected_skills": ["logging-observability"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "logging-adjacent-negative",
+    "prompt": "Change the wording of this CLI console success message.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["logging-observability"]
+  },
+  {
+    "id": "logging-quick-negative",
+    "prompt": "mode: quick. Print two debug values while I investigate this local script.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["logging-observability"]
+  },
+  {
+    "id": "migration-explicit",
+    "prompt": "Use database-migration to split the production customer name column safely.",
+    "expected_action": "plan",
+    "expected_skills": ["database-migration"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "migration-implicit",
+    "prompt": "Add a non-null tenant identifier to a large live table while old and new app versions coexist.",
+    "expected_action": "plan",
+    "expected_skills": ["database-migration"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "migration-adjacent-negative",
+    "prompt": "Rename a local variable in the SQL formatter without changing generated SQL.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["database-migration"]
+  },
+  {
+    "id": "migration-query-negative",
+    "prompt": "Update this read-only report query to sort names ascending; the exact SQL is supplied.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["database-migration"]
+  },
+  {
+    "id": "api-explicit",
+    "prompt": "Use api-contract to design a versioned public endpoint for customer exports.",
+    "expected_action": "plan",
+    "expected_skills": ["api-contract"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "api-implicit",
+    "prompt": "Change this webhook payload while keeping existing third-party consumers working.",
+    "expected_action": "plan",
+    "expected_skills": ["api-contract"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "api-adjacent-negative",
+    "prompt": "Extract a private helper inside this controller without changing its request or response behavior.",
+    "expected_action": "plan",
+    "expected_skills": [],
+    "forbidden_skills": ["api-contract"]
+  },
+  {
+    "id": "api-quick-negative",
+    "prompt": "mode: quick. Add a temporary local endpoint returning a fixed sample payload.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["api-contract"]
+  },
+  {
+    "id": "security-explicit",
+    "prompt": "Use security-sensitive-change to add tenant-aware authorization to this admin endpoint.",
+    "expected_action": "plan",
+    "expected_skills": ["security-sensitive-change"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "security-implicit",
+    "prompt": "Implement password reset tokens and account recovery for the production application.",
+    "expected_action": "plan",
+    "expected_skills": ["security-sensitive-change"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "security-adjacent-negative",
+    "prompt": "Adjust spacing on the login page without changing authentication behavior.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["security-sensitive-change"]
+  },
+  {
+    "id": "security-quick-still-applies",
+    "prompt": "mode: quick. Make the test login accept any password in the production build.",
+    "expected_action": "stop",
+    "expected_skills": ["security-sensitive-change"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "ui-explicit",
+    "prompt": "Use user-interface-delivery to build a durable customer creation workflow.",
+    "expected_action": "plan",
+    "expected_skills": ["user-interface-delivery"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "ui-implicit",
+    "prompt": "Redesign this mobile checkout flow to reduce steps and cover loading, validation, error, and accessibility states.",
+    "expected_action": "plan",
+    "expected_skills": ["user-interface-delivery"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "ui-adjacent-negative",
+    "prompt": "Increase the API worker timeout from 20 to 30 seconds as specified.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["user-interface-delivery"]
+  },
+  {
+    "id": "ui-quick-negative",
+    "prompt": "mode: quick. Make a disposable static mockup so I can compare two labels.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["user-interface-delivery"]
+  },
+  {
+    "id": "release-explicit",
+    "prompt": "Use release-deploy to deploy the already approved build to staging and verify it.",
+    "expected_action": "implement",
+    "expected_skills": ["release-deploy"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "release-implicit",
+    "prompt": "Prepare a production rollout with migrations, health gates, and rollback for this approved feature.",
+    "expected_action": "plan",
+    "expected_skills": ["release-deploy"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "release-adjacent-negative",
+    "prompt": "Commit and push this tested documentation correction; no deployment is connected to the branch.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["release-deploy"]
+  },
+  {
+    "id": "release-local-negative",
+    "prompt": "Run the local production build to confirm it compiles, without publishing or deploying it.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["release-deploy"]
+  },
+  {
+    "id": "debug-explicit",
+    "prompt": "Use systematic-debugging to diagnose this intermittent integration test failure.",
+    "expected_action": "plan",
+    "expected_skills": ["systematic-debugging"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "debug-implicit",
+    "prompt": "The build fails only in CI and the cause is unknown. Reproduce it and fix the earliest cause.",
+    "expected_action": "plan",
+    "expected_skills": ["systematic-debugging"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "debug-known-cause-negative",
+    "prompt": "The failure is caused by the misspelled environment key on line 12; correct that exact key.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["systematic-debugging"]
+  },
+  {
+    "id": "debug-feature-negative",
+    "prompt": "Add the specified --json flag to this working CLI.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["systematic-debugging"]
+  },
+  {
+    "id": "infrastructure-explicit",
+    "prompt": "Use infrastructure-change to replace the production reverse proxy and preserve rollback.",
+    "expected_action": "plan",
+    "expected_skills": ["infrastructure-change"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "infrastructure-implicit",
+    "prompt": "Change DNS, TLS certificates, and firewall rules for the production API migration.",
+    "expected_action": "plan",
+    "expected_skills": ["infrastructure-change"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "infrastructure-adjacent-negative",
+    "prompt": "Correct the example domain name in the reverse-proxy documentation only.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["infrastructure-change"]
+  },
+  {
+    "id": "infrastructure-quick-negative",
+    "prompt": "mode: quick. Start a disposable local container to inspect this image, with no persistent configuration.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["infrastructure-change"]
+  },
+  {
+    "id": "ci-explicit",
+    "prompt": "Use ci-pipeline to add required test, lint, type-check, and build jobs to GitHub Actions.",
+    "expected_action": "plan",
+    "expected_skills": ["ci-pipeline"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "ci-implicit",
+    "prompt": "Secure this pull-request workflow so forked code cannot access release secrets or poison privileged caches.",
+    "expected_action": "plan",
+    "expected_skills": ["ci-pipeline"],
+    "forbidden_skills": []
+  },
+  {
+    "id": "ci-adjacent-negative",
+    "prompt": "Update the README badge label without changing the workflow or its URL.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["ci-pipeline"]
+  },
+  {
+    "id": "ci-quick-negative",
+    "prompt": "mode: quick. Write a one-off local shell command that runs these two checks for this experiment.",
+    "expected_action": "implement",
+    "expected_skills": [],
+    "forbidden_skills": ["ci-pipeline"]
+  }
+]
